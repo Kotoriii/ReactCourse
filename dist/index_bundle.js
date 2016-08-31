@@ -73,10 +73,14 @@
 	var Link = React.createClass({
 		displayName: 'Link',
 
+		changeURL: function () {
+			window.location.replace(this.props.href);
+		},
 		render: function () {
-			React.createElement(
+			return React.createElement(
 				'span',
-				null,
+				{ style: { color: 'blue', cursor: 'pointer' },
+					onClick: this.changeURL },
 				this.props.children
 			);
 		}
