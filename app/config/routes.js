@@ -8,6 +8,7 @@ var Main = require('../components/Main'); //Routed Components
 var Home = require('../components/Home');
 var PromptContainer = require('../containers/PromptContainer');
 var ConfirmBattleContainer = require('../containers/ConfirmBattleContainer');
+var ResultsContainer = require('../containers/ResultsContainer');
 
 //Routes
 
@@ -19,8 +20,7 @@ var routes = (
 	  	<Route path='playerTwo/:playerOne' header='Player Two' component={PromptContainer} />
 	  	<Route path='battle' component={ConfirmBattleContainer} />
 	  	<Route path='results' component={ResultsContainer} />
-	  {/* 1:09 */}
-	  	</Route>
+	   </Route>
 	</Router>
 	);
 
