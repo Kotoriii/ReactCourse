@@ -6,6 +6,7 @@ var Link = require('react-router').Link;
 var UserDetails = require('./UserDetails');
 var UserDetailsWrapper = require('./UserDetailsWrapper');
 var MainContainer = require('./MainContainer');
+var Loading = require('./Loading');
 
 /*function puke (object) {
 	return <pre>{JSON.stringify(obj, null, ' ')}</pre>
@@ -13,7 +14,7 @@ var MainContainer = require('./MainContainer');
 
 function ConfirmBattle (props) {
 	return props.isLoading === true
-		? <p> LOADING </p>
+		? <Loading speed={800} text='Peanut Butter Jelly Time' />
 		//: <div> CONFIRM BATTLE: {puke(props)} </div>
 		: <MainContainer>
         <h1>Confirm Players</h1>
